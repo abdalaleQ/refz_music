@@ -104,7 +104,7 @@ async def sudodel(_, message: Message):
             return await message.reply_text(f"فشل إزالة المستخدم من قائمة المطورين.")
 
 
-@app.on_message(filters.command(["sudolist", "sudoers", "sudo"]) | filters.command(["المطورين","قائمه المطورين"],prefixes= ["/", "!","","#"]))
+@app.on_message(filters.command(["sudolist", "sudoers", "sudo"]) | filters.command(["المطور"," مطور"],prefixes= ["/", "!","","#"]))
 async def sudoers_list(_, message: Message):
     hehe = await message.reply_text("⎊ جارٍ الحصول على قائمة المطورين...")
     text = "<u>⎊ **المطور :**</u>\n"
