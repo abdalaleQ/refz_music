@@ -58,7 +58,7 @@ async def song(_, message: Message):
             f"فشل إحضار المسار من ʏᴛ-ᴅʟ.\n\n**السبب :** `{ex}`"
         )
 
-    await m.edit_text("⎊ جارٍ التحميل انتظر,\n\n⎊ بواسطه ‌SPIDER..")
+    await m.edit_text("⎊ جارٍ التحميل انتظر,\n\n⎊ بواسطه ‌T_5_G..")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -91,7 +91,7 @@ async def song(_, message: Message):
             )
             if message.chat.type != ChatType.PRIVATE:
                 await message.reply_text(
-                    "يرجى التحقق من أن المسؤول قد أرسل الأغنية المطلوبة."
+                    "تم تحميل الاغنيه وارساله الا خاص البوت مع تحيات الزعيم."
                 )
         except:
             start_butt = InlineKeyboardMarkup(
