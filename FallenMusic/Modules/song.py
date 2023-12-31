@@ -64,7 +64,7 @@ async def song(_, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ѕᴏᴜʀᴄᴇ ʀᴇғᴢ 𖤛 ⦔ ♢━‌‌‏⌯⊷≫\n⎊ **العنوان :** [{title[:23]}]({link})\n⎊ **المده :** `{duration}`\n⎊ ** بواسطة :** {BOT_MENTION}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ѕᴏᴜʀᴄᴇ ʀᴇғᴢ 𖤛 ⦔ ♢━‌‌‏⌯⊷≫"
+        rep = f"‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ميوزك اغاني 𖤛 ⦔ ♢━‌‌‏⌯⊷≫\n⎊ **العنوان :** [{title[:23]}]({link})\n⎊ **المده :** `{duration}`\n⎊ ** بواسطة :** {BOT_MENTION}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ميوزك اغاني 𖤛 ⦔ ♢━‌‌‏⌯⊷≫"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -91,7 +91,7 @@ async def song(_, message: Message):
             )
             if message.chat.type != ChatType.PRIVATE:
                 await message.reply_text(
-                    "يرجى التحقق من أن المسؤول قد أرسل الأغنية المطلوبة."
+                    "يرجى التحقق من أن المسؤول قد أرسل الأغنية المطلوبة للخاص."
                 )
         except:
             start_butt = InlineKeyboardMarkup(
