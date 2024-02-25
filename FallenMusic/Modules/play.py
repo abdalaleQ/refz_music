@@ -250,7 +250,7 @@ async def play(_, message: Message):
         await add_active_chat(message.chat.id)
         await message.reply_photo(
             photo=imgt,
-            caption=f"‌‌‏‌‌‏‌‌‏سورس ميوزك\n**⎊ تـم الـتـشـغـيـل ✅**\n\n⎊ **العنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⎊ **المده :** `{duration}` دقيقه\n⎊ **بواسطه :** {ruser}\n‌‌ ‏‌‌‏‌‌‏سورس ميوزك ",
+            caption=f"‌‌ 𝗕𝗨𝗧 𝗠𝗜𝗨𝗭𝗜𝗞\n**⎊ تـم الـتـشـغـيـل ✅**\n\n⎊ **العنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⎊ **المده :** `{duration}` دقيقه\n⎊ **بواسطه :** {ruser}\n‌‌ ‏‌‌‏‌‌‏𝗕𝗨𝗧 𝗠𝗜𝗨𝗭𝗜𝗞",
             reply_markup=buttons,
         )
 
